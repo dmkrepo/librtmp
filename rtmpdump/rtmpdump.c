@@ -284,7 +284,7 @@ GetLastKeyframe(FILE * file,	// output file [in]
 		int *initialFrameType,	// initial frame type (audio/video) [out]
 		uint32_t * nInitialFrameSize)	// length of initialFrame [out]
 {
-  const size_t bufferSize = 16;
+  enum{ bufferSize = 16 };
   char buffer[bufferSize];
   uint8_t dataType;
   int bAudioOnly;

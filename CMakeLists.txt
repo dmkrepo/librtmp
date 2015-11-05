@@ -27,6 +27,7 @@ find_package(OpenSSL REQUIRED)
 find_package(ZLib REQUIRED)
 
 include_directories(
+	${CMAKE_SOURCE_DIR}/include
 	${CMAKE_SOURCE_DIR}/librtmp
 	${OPENSSL_INCLUDE_DIR}
 	${ZLIB_INCLUDE_DIRS}
@@ -44,10 +45,10 @@ target_compile_options(
 )
 
 set(DUMP_SRCS
-getopt.c
-rtmpdump.c
-stdafx.h
-targetver.h
+	rtmpdump/getopt.c
+	rtmpdump/rtmpdump.c
+	rtmpdump/stdafx.h
+	rtmpdump/targetver.h
 )
 
 add_executable(rtmpdump ${DUMP_SRCS})
