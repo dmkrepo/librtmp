@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 project(librtmp C)
 
 add_definitions(
+-DUSE_OPENSSL
 -D_CRT_SECURE_NO_WARNINGS
 )
 
