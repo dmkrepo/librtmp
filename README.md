@@ -6,6 +6,7 @@
 #### License
 
 rtmpdump - GPLv2
+
 librtmp - LGPL
 
 The original project is taken from: 
